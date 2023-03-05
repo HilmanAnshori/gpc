@@ -1,0 +1,16 @@
+{
+    "lat": -6.818348707697032, 
+    "lng": 107.1401289527317,
+    "location" : [
+        {
+            "address" : "Alfamart jl Raya Maleber",
+            "lat": -6.820649, 
+            "lng": 107.1739518
+        },
+        {
+            "address" : "Alfamart Jamali",
+            "lat": -6.771196, 
+            "lng": 107.1911395
+        }
+    ]
+}
