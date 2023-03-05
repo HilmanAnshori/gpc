@@ -3,14 +3,17 @@ let map;
 function initMap(kota) {
   map = new google.maps.Map(document.getElementById("map"), {
     center: new google.maps.LatLng(kota.lat, kota.lng),
-    zoom: 11,
+    zoom: kota.zoom,
   });
+
+  const image = "https://raw.githubusercontent.com/HilmanAnshori/gpc/main/img/pin.png";
   
   // Create markers.
   for (let i = 0; i < kota.location.length; i++) {
     const marker = new google.maps.Marker({
       position: new google.maps.LatLng(kota.location[i].lat, kota.location[i].lng),
       map: map,
+      icon: image,
     });
     console.log(kota.location[i].lat);
   }
