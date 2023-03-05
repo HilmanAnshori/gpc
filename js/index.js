@@ -10,11 +10,38 @@ function initMap(kota) {
   
   // Create markers.
   for (let i = 0; i < kota.location.length; i++) {
+    
+    const contentString =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h3 id="firstHeading" class="firstHeading">Gehu Pedas Cianjur</h3>' +
+    '<div id="bodyContent">' +
+    "<p>" + kota.location[i].address +
+    "</p>" +
+    '<p><a target="_blank" href="https://www.google.com/maps/dir//' + kota.location[i].lat + ',' + kota.location[i].lng + '">Petunjuk arah Google Map</a>' +
+    "</p>" +
+    "</div>" +
+    "</div>";
+
+    const infowindow = new google.maps.InfoWindow({
+        content: contentString,
+        ariaLabel: "Gehu Pedas Cianjur",
+      });
+
     const marker = new google.maps.Marker({
       position: new google.maps.LatLng(kota.location[i].lat, kota.location[i].lng),
       map: map,
       icon: image,
+      title: kota.location[i].address,
     });
+
+    marker.addListener("click", () => {
+        infowindow.open({
+          anchor: marker,
+          map,
+        });
+      });
     console.log(kota.location[i].lat);
   }
 }
