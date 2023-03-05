@@ -12,6 +12,12 @@
             "address" : "Alfamart Jamali",
             "lat": -6.771196, 
             "lng": 107.1911395
+        },
+        {
+            "address" : "Alfamart Simpang Cibeber",
+            "lat": -6.849971238446878, 
+            "lng": 107.13007057280106
         }
     ]
 }
+
