@@ -63,6 +63,12 @@ $.getJSON('data/cities.json', function(data) {
     getCity(kota);
 });
 
+$("#cities").change(function() {
+    var kota = $("#cities option:selected").text()
+    console.log(kota);
+    getCity(kota);
+});
+
 
 
 //window.initMap = initMap;
