@@ -32,7 +32,18 @@
             "address" : "Hemat Ciranjang",
             "lat": -6.815985363302889,    
             "lng": 107.25236658900681
+        },
+        {
+            "address" : "Perempatan Bojong",
+            "lat": -6.803845868544331,     
+            "lng": 107.16929165076611
+        },
+        {
+            "address" : "Warungkondang",
+            "lat": -6.871649476490703,     
+            "lng": 107.09553444576234
         }
+        
     ]
 }
 
